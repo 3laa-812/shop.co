@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,7 +12,7 @@ nav ul li ul {
 
 nav ul li:hover ul {
     display: block;
-=======
+}
 
 @font-face {
     font-family: 'Integral';
@@ -28,7 +26,7 @@ nav ul li:hover ul {
 h2{
     font-family: 'Integral', sans-serif;
 }
+
 p{
     font-family: 'satoshi', sans-serif;
->>>>>>> hero-section
 }
