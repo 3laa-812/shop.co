@@ -3,64 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Shop Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script defer src="script.js"></script>
 </head>
-<body>
-    <!-- Hero Section -->
-    <section class="bg-[#F2F0F1]">
-        <!-- Content -->
-        <div class="relative min-h-screen flex flex-col lg:flex-row items-center px-6 md:px-16">
-            <!-- Left Side -->
-            <div class="left__side max-w-3xl text-center lg:text-left lg:w-1/2">
-                <h2 class="text-[40px] md:text-[64px] text-[#000000] font-bold leading-tight">
-                    FIND CLOTHES THAT MATCHES YOUR STYLE
-                </h2>
-                <p class="text-[16px] text-[#000000]/[60%] font-normal leading-[22px] my-6">
-                    Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
-                </p>
-                <button class="bg-black w-[180px] md:w-[210px] h-[52px] text-white rounded-full text-lg py-3 px-8">
-                    Shop Now
-                </button>
+<body class="bg-gray-100">
 
-                <!-- Statistics -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-[32px] my-[32px] text-center">
-                    <div class="flex flex-col border-b md:border-r md:border-b-0 border-[#000000]/[10%] pb-4 md:pb-0">
-                        <p class="text-[40px] text-[#000000] font-bold">200+</p>
-                        <p class="text-[16px] text-[#000000]/[60%] font-normal">International Brands</p>
-                    </div>
-                    <div class="flex flex-col border-b md:border-r md:border-b-0 border-[#000000]/[10%] pb-4 md:pb-0">
-                        <p class="text-[40px] text-[#000000] font-bold">2,000+</p>
-                        <p class="text-[16px] text-[#000000]/[60%] font-normal">High-Quality Products</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p class="text-[40px] text-[#000000] font-bold">30,000+</p>
-                        <p class="text-[16px] text-[#000000]/[60%] font-normal">Happy Customers</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Top Bar -->
+    <div class="bg-black text-white text-center text-sm py-2">
+        Sign up and get 20% off on your first order. <a href="#" class="underline">Sign Up Now</a>
+    </div>
 
-            <!-- Right Side (Stars) -->
-            <div class="right__side w-full lg:w-1/2 relative flex justify-center lg:justify-end mt-10 lg:mt-0">
-                <div class="absolute top-10 right-10 lg:right-16 text-5xl">
-                    <img class="w-8 md:w-12 lg:w-16" src="assets/photos/star.png" alt="star">
-                </div>
-                <div class="absolute bottom-16 left-10 lg:left-32 text-3xl">
-                    <img class="w-6 md:w-10 lg:w-14" src="assets/photos/star.png" alt="star">
-                </div>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center py-4">
+            
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold">
+                <span class="text-black">SHOP.CO</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
+                <li class="relative group">
+                    <a href="#" class="hover:text-black flex items-center">
+                        Shop <span class="ml-1">&#9662;</span>
+                    </a>
+                    <!-- Dropdown -->
+                    <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Men</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Women</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Kids</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:text-black">On Sale</a></li>
+                <li><a href="#" class="hover:text-black">New Arrivals</a></li>
+                <li><a href="#" class="hover:text-black">Brands</a></li>
+            </ul>
+
+            <!-- Search & Icons -->
+            <div class="flex items-center space-x-4">
+                <input type="text" placeholder="Search for products..." class="hidden md:block border rounded-full px-4 py-1 w-60">
+                <a href="#" class="text-gray-700 hover:text-black">🛒</a>
+                <a href="#" class="text-gray-700 hover:text-black">👤</a>
             </div>
         </div>
-
-        <!-- Sponsors -->
-        <div class="bg-black h-auto py-6 w-full flex flex-wrap justify-center gap-8 md:gap-12">
-            <img class="h-8 md:h-12" src="assets/photos/versace.png" alt="Versace">
-            <img class="h-8 md:h-12" src="assets/photos/zara.png" alt="Zara">
-            <img class="h-8 md:h-12" src="assets/photos/gucci.png" alt="Gucci">
-            <img class="h-8 md:h-12" src="assets/photos/prada.png" alt="Prada">
-            <img class="h-8 md:h-12" src="assets/photos/calvin.png" alt="Calvin Klein">
-        </div>
-    </section>
+    </nav>
 
 </body>
 </html>
