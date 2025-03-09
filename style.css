@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 @tailwind base;
 @tailwind components;
@@ -13,4 +14,21 @@ nav ul li ul {
 
 nav ul li:hover ul {
     display: block;
+=======
+
+@font-face {
+    font-family: 'Integral';
+    src: url('assets/fonts/Integral-CF/Demo_Fonts/Fontspring-DEMO-integralcf-bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'satoshi';
+        src: url('assets/fonts/Satoshi_Complete/Fonts/OTF/Satoshi-Black.otf') format('otf');
+  }
+
+h2{
+    font-family: 'Integral', sans-serif;
+}
+p{
+    font-family: 'satoshi', sans-serif;
+>>>>>>> hero-section
 }
