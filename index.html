@@ -3,107 +3,289 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP.CO</title>
-    <link href="./output.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+    <title>nour</title>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/Style.css">
+    <link rel="stylesheet" href="./style/all.min.css">
+
+    
+    <!-- <link rel="stylesheet" href="/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css"> -->
 </head>
-<body class="bg-gray-100">
-
-    <!-- Top Bar -->
-    <div class="bg-black text-white text-center text-sm py-2">
-        Sign up and get 20% off on your first order. <a href="#" class="underline">Sign Up Now</a>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="bg-white shadow-md">
-        <div class="container mx-auto px-4 flex justify-between items-center py-4">
-            
-            <!-- Logo -->
-            <a href="#" class="text-2xl font-bold">
-                <span class="text-black">SHOP.CO</span>
-            </a>
-
-            <!-- Navigation Links -->
-            <ul class="hidden md:flex space-x-6 text-gray-700 font-medium">
-                <li class="relative group">
-                    <a href="#" class="hover:text-black flex items-center">
-                        Shop <span class="ml-1">&#9662;</span>
-                    </a>
-                    <!-- Dropdown -->
-                    <ul class="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md">
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Men</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Women</a></li>
-                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Kids</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="hover:text-black">On Sale</a></li>
-                <li><a href="#" class="hover:text-black">New Arrivals</a></li>
-                <li><a href="#" class="hover:text-black">Brands</a></li>
+<body>
+    <!-- Top Bar Button -->
+    <div class="top-bar-button" id="topBarButton">
+        <i class="fa-solid fa-arrow-up"></i>
+      </div>
+      <!-- Top Notification Bar -->
+      <div class="top-bar" id="topBar">
+        <div class="container">
+          <p>
+            Sign up and get 20% off to your first order.
+            <a href="#" class="signup-link">Sign Up Now</a>
+          </p>
+          <button class="close-btn" id="closeTopBar" >
+            &times;
+          </button>
+        </div>
+      </div>
+  
+      <!-- Header Section -->
+      <header class="site-header">
+        <div class="container">
+          <!-- Menu Icon -->
+          <div class="menu-icon" id="menuIcon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <!-- Logo -->
+          <a href="#" class="logo">SHOP.CO</a>
+          <!-- Search Icon -->
+          <div class="search-icon" id="searchIcon">
+            <i class="fa-solid fa-search"></i>
+          </div>
+          <!-- Search Bar Mobile -->
+          <div class="search-bar" id="searchBar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products..." />
+          </div>
+          <!-- Navigation -->
+          <nav class="main-nav" id="mainNav">
+            <ul>
+              <li class="dropdown">
+                <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                  <a href="#">Men</a>
+                  <a href="#">Women</a>
+                  <a href="#">baby</a>
+                </div>
+              </li>
+              <li><a href="#">On Sale</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Brands</a></li>
             </ul>
-
-            <!-- Search & Icons -->
-            <div class="flex items-center space-x-4">
-                <input type="text" placeholder="Search for products..." class="hidden md:block border rounded-full px-4 py-1 w-60">
-                <a href="#" class="text-gray-700 hover:text-black"><img src="assets/photos/shop.png" alt=""></a>
-                <a href="#" class="text-gray-700 hover:text-black"><img src="assets/photos/person.png" alt=""></a>
-            </div>
+          </nav>
+          <!--Serch Bar Larg Screean :) -->
+          <div class="search-larg">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for products..." />
+          </div>
+          <!-- User Actions -->
+          <div class="user-actions">
+            <a href="#" class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#" class="account-icon">
+              <i class="fa-regular fa-user"></i>
+            </a>
+          </div>
         </div>
-    </nav>
-
-       <!-- Hero Section -->
-       <section class="bg-gray-200">
-        <!-- Content -->
-        <div class="relative min-h-screen flex flex-col lg:flex-row items-center px-6 md:px-16">
-            <!-- Left Side -->
-            <div class="left__side max-w-3xl text-center lg:text-left lg:w-1/2">
-                <h2 class="text-4xl md:text-6xl text-black font-bold leading-tight">
-                    FIND CLOTHES THAT MATCHES YOUR STYLE
-                </h2>
-                <p class="text-base text-gray-600 font-normal leading-6 my-6">
-                    Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
-                </p>
-                <button class="bg-black w-44 md:w-52 h-12 text-white rounded-full text-lg py-3 px-8">
-                    Shop Now
-                </button>
-
-                <!-- Statistics -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 my-8 text-center">
-                    <div class="flex flex-col border-b md:border-r md:border-b-0 border-gray-300 pb-4 md:pb-0">
-                        <p class="text-4xl text-black font-bold">200+</p>
-                        <p class="text-base text-gray-600 font-normal">International Brands</p>
-                    </div>
-                    <div class="flex flex-col border-b md:border-r md:border-b-0 border-gray-300 pb-4 md:pb-0">
-                        <p class="text-4xl text-black font-bold">2,000+</p>
-                        <p class="text-base text-gray-600 font-normal">High-Quality Products</p>
-                    </div>
-                    <div class="flex flex-col">
-                        <p class="text-4xl text-black font-bold">30,000+</p>
-                        <p class="text-base text-gray-600 font-normal">Happy Customers</p>
-                    </div>
-                </div>
+      </header>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+            <p>
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense of
+              style.
+            </p>
+            <a href="#" class="btn-primary">Shop Now</a>
+            <div class="stats-container">
+              <div class="stat-item">
+                <h2><span data-goal="200">0</span>+</h2>
+                <p>International Brands</p>
+              </div>
+              <div class="stat-item">
+                <h2><span data-goal="2000">0</span>+</h2>
+                <p>High-Quality Products</p>
+              </div>
+              <div class="stat-item">
+                <h2><span data-goal="30000">0</span>+</h2>
+                <p>Happy Customers</p>
+              </div>
             </div>
-
-            <!-- Right Side (Stars) -->
-            <div class="right__side w-full lg:w-1/2 relative flex justify-center lg:justify-end mt-10 lg:mt-0">
-                <div class="absolute top-10 right-10 lg:right-16 text-5xl">
-                    <img class="w-8 md:w-12 lg:w-16" src="assets/photos/star.png" alt="star">
-                </div>
-                <div class="absolute bottom-16 left-10 lg:left-32 text-3xl">
-                    <img class="w-6 md:w-10 lg:w-14" src="assets/photos/star.png" alt="star">
-                </div>
+          </div>
+          <!-- Star -->
+          <div class="empty">
+            <div class="stars-container">
+              <img src="./images/Vector (1).svg" alt="Star" class="star star-1" />
+              <img src="./images/Vector.svg" alt="Star" class="star star-2" />
             </div>
+          </div>
         </div>
-
-        <!-- Sponsors -->
-        <div class="bg-black h-auto py-6 w-full flex flex-wrap justify-center gap-6 md:gap-12">
-            <img class="h-8 md:h-12" src="assets/photos/versace.png" alt="Versace">
-            <img class="h-8 md:h-12" src="assets/photos/zara.png" alt="Zara">
-            <img class="h-8 md:h-12" src="assets/photos/gucci.png" alt="Gucci">
-            <img class="h-8 md:h-12" src="assets/photos/prada.png" alt="Prada">
-            <img class="h-8 md:h-12" src="assets/photos/calvin.png" alt="Calvin Klein">
+      </section>
+      <!-- Brands Section -->
+      <section class="brands-section">
+        <div class="brands-scroll" id="brandsScroll">
+          <div class="brands-container">
+            <div class="group one">
+                <img src="./images/v.png" alt="Versace" />
+                <img src="./images/zara-logo-1 1.png" alt="Zara" />
+                <img src="./images/gucci-logo-1 1.png" alt="Gucci" />
+                <img src="./images/prada-logo-1 1.png" alt="Prada" />
+                <img src="./images/Group (1).png" alt="Calvin Klein" />
+            </div>
+            <div class="group tow">
+                <img src="./images/zara-logo-1 1.png" alt="Zara" />
+                <img src="./images/v.png" alt="Versace" />
+                <img src="./images/prada-logo-1 1.png" alt="Prada" />
+                <img src="./images/Group (1).png" alt="Calvin Klein" />
+                <img src="./images/gucci-logo-1 1.png" alt="Gucci" />
+            </div>
+          </div>
         </div>
+      </section>
+      <!--  -->
+    <!-- start section two -->
+    <section class="two">
+        <h1 class="head">NEW ARRIVALS</h1>
+        <div class="collect"></div>
+        <button class="first">View All</button>
     </section>
+    <!-- End section two -->
+     <!-- Start section three -->
+    <section class="three">
+        <h1 class="head">TOP SELLING</h1>
+        <div class="collectt"></div>
+        <button class="first">View All</button>
+    </section>
+    <!-- End section three -->
+     <!-- Start section four -->
+     <section class="dress-style-section">
+        <div class="container">
+          <h2>BROWSE BY DRESS STYLE</h2>
+          <div class="dress-style-grid">
+            <!-- Casual -->
+            <a href="#" class="dress-style-card casual">
+              <div>
+                <h3>Casual</h3>
+              </div>
+            </a>
+            <!-- Formal -->
+            <a href="#" class="dress-style-card formal">
+              <div>
+                <h3>Formal</h3>
+              </div>
+            </a>
+            <!-- Party -->
+            <a href="#" class="dress-style-card party">
+              <div>
+                <h3>Party</h3>
+              </div>
+            </a>
+            <!-- Gym -->
+            <a href="#" class="dress-style-card gym">
+              <div>
+                <h3>Gym</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+            <!-- end section four -->
+
+             <!-- start section five -->
+             <section class="five">
+                <div class="thefirst">
+                    <h1>HAPPY CUSTOMERS</h1>
+                    <div class="directions">
+                        <button class="left"id="leftBtn" ><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="right" id="rightBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                    </div>
+                   <div class="all-customers">
+                     <div class="checkcollect"> </div>
+                   </div>
+                    <div class="sectionblack">
+                            <div class="pp">
+                                <p>STAY UPTO DATE ABOUT</p>
+                                <p>OUR LATEST OFFERS</p>
+                            </div>
+                        <div class="emailandsubscribe">
+                            <input type="email" name="" id="" placeholder="Enter your email address">
+                            <button>Subscribe to Newsletter</button>
+                        </div>
+                    </div>
+            </section>
+             <!-- end section five -->
+              
+    <footer class="footer-section">
+        <div class="container">
+          <!-- Top Section -->
+          <div class="footer-top">
+            <div class="footer-brand">
+              <h2 class="logo">SHOP.CO</h2>
+              <p>
+                We have clothes that suits your style and which you're proud to
+                wear. From women to men.
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-links">
+              <!--  -->
+              <div class="footer-column-group">
+                <div class="footer-column">
+                  <h3>COMPANY</h3>
+                  <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Career</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>HELP</h3>
+                  <ul>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Delivery Details</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- -->
+              <div class="footer-column-group">
+                <div class="footer-column">
+                  <h3>FAQ</h3>
+                  <ul>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Manage Deliveries</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Payments</a></li>
+                  </ul>
+                </div>
+                <div class="footer-column">
+                  <h3>RESOURCES</h3>
+                  <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">Youtube Playlist</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom Section -->
+          <div class="footer-bottom">
+            <p>Shop.co © 2000-2023, All Rights Reserved</p>
+            <div class="footer-payments">
+                <img src="./images/Badge (2).png" alt="PayPal" />
+                <img src="./images/Badge (3).png" alt="Pay" />
+                <img src="./images/Badge (4).png" alt="G Pay" />
+                <img src="./images/Badge (1).png" alt="Visa" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="./js/script.js"></script>
+    <script src="spinnerLoader.js"></script>
 
 </body>
 </html>
